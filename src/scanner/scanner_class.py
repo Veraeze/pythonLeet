@@ -1,11 +1,12 @@
-# word = input("enter numbers").split(",")
-# result = []
-# for i in word:
-#     result.append(int(i)*int(i))
-# print(result)
+import sys
 
-def convert(word):
-    result = []
-    for i in word.split(","):
-        result.append(int(i)*int(i))
-    return result
+
+class Scanner:
+    def nextInt(self):
+        return int(sys.stdin.readline())
+
+    def nextDouble(self):
+        return float(sys.stdin.readline())
+
+    def nextLine(self):
+        return str(sys.stdin.readline().strip())

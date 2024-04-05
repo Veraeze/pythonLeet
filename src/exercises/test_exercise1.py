@@ -1,8 +1,13 @@
 import unittest
+from unittest import TestCase
+from exercise1 import convert
 
-class MyTestCase(unittest.TestCase):
+
+class MyTestCase(TestCase):
     def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+        output = convert("2,3,5")
+        self.assertEqual(output, [4, 9, 25])  # add assertion here
+
 
 if __name__ == '__main__':
     unittest.main()
